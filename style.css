@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  /* padding: 0; */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+:root {
+  font-family: "Nunito", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+}
+
+html {
+  background: #f0db4f;
+  height: 100%;
+}
+
+body {
+  display: grid;
+  grid-template:
+    "header" min-content
+    "main" auto
+    "footer" min-content
+    / auto;
+  min-height: 100%;
+}
+
+body > header {
+  grid-area: header;
+
+  height: 5rem;
+}
+
+body > header > a.brand {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 1rem;
+}
+
+body > main {
+  grid-area: main;
+
+  margin: 1rem auto;
+
+  text-align: center;
+}
+
+body > footer {
+  grid-area: footer;
+
+  height: 20rem;
+
+  text-align: center;
+}
+
+body > footer > a {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
