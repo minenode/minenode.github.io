@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&display=swap");
-
 *,
 *::before,
 *::after {
@@ -26,42 +25,46 @@ html {
 
 body {
   display: grid;
-  grid-template:
-    "header" min-content
-    "main" auto
-    "footer" min-content
-    / auto;
+  grid-template: "header" min-content "main" auto "footer" min-content/auto;
   min-height: 100%;
 }
-
-body > header {
+body header {
   grid-area: header;
-
   height: 5rem;
 }
-
-body > header > a.brand {
+body header a.brand {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding: 1rem;
 }
-
-body > main {
+body main {
   grid-area: main;
-
   margin: 1rem auto;
-
+  max-width: 800px;
+  padding: 1rem 2rem;
+}
+body main h2.title {
   text-align: center;
 }
-
-body > footer {
+body main p.subtitle {
+  text-align: center;
+}
+body main h3.heading {
+  padding-top: 2rem;
+}
+body main p.subheading {
+  padding: 0.25rem 0;
+}
+body footer {
   grid-area: footer;
-
   height: 20rem;
-
   text-align: center;
 }
-
-body > footer > a {
+body footer a {
   font-size: 1.2rem;
   font-weight: bold;
 }
+body footer span.copyright {
+  font-size: 0.8rem;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,16 @@
+{
+  "devDependencies": {
+    "nodemon": "^2.0.6",
+    "rimraf": "^3.0.2",
+    "sass": "^1.28.0",
+    "serve": "^11.3.2",
+    "yarn": "^1.22.10"
+  },
+  "scripts": {
+    "clean": "rimraf docs/built/",
+    "build": "yarn clean && yarn build:css",
+    "build:css": "sass src/style.scss docs/built/style.css",
+    "serve": "serve docs",
+    "watch": "nodemon -w src -x \"yarn build\" -e \"scss\""
+  }
+}
