@@ -4,7 +4,6 @@
 *::after {
   box-sizing: border-box;
   margin: 0;
-  /* padding: 0; */
 }
 
 a {
@@ -21,6 +20,14 @@ a {
 html {
   background: #f0db4f;
   height: 100%;
+}
+
+html.dark {
+  background: #36393f;
+  color: #f0f0f0;
+}
+html.dark body footer .icon {
+  fill: #f0f0f0;
 }
 
 body {
@@ -59,12 +66,26 @@ body footer {
   height: 20rem;
   text-align: center;
 }
+body footer .icon {
+  fill: #171516;
+  height: 120px;
+  width: 120px;
+}
 body footer a {
   font-size: 1.2rem;
   font-weight: bold;
 }
 body footer span.copyright {
   font-size: 0.8rem;
+}
+body footer button.lights-button {
+  padding: 0.5rem;
+  background: inherit;
+  color: inherit;
+  border: 1px solid grey;
+  border-radius: 0.25rem;
+  outline: none;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
