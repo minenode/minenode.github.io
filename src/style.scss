@@ -1,10 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&display=swap");
 
-$foreground-light: #171516;
-$background-light: #f0db4f;
-
 $foreground-dark: #f0f0f0;
-$background-dark: #36393f;
+$background-dark: hsl(220, 8%, 13%);
 
 *,
 *::before,
@@ -25,35 +22,14 @@ a {
 }
 
 html {
-  background: #f0db4f;
-  height: 100%;
-}
-
-html.dark {
   background: $background-dark;
   color: $foreground-dark;
-
-  body {
-    footer {
-      .icon {
-        fill: $foreground-dark;
-      }
-    }
-  }
 }
 
 body {
-  display: grid;
-  grid-template:
-    "header" min-content
-    "main" auto
-    "footer" min-content
-    / auto;
   min-height: 100%;
 
   header {
-    grid-area: header;
-
     height: 5rem;
 
     a.brand {
@@ -63,8 +39,7 @@ body {
   }
 
   main {
-    grid-area: main;
-
+    height: 100%;
     margin: 1rem auto;
 
     max-width: 800px;
@@ -88,17 +63,7 @@ body {
   }
 
   footer {
-    grid-area: footer;
-
-    height: 20rem;
-
     text-align: center;
-
-    .icon {
-      fill: $foreground-light;
-      height: 120px;
-      width: 120px;
-    }
 
     a {
       font-size: 1.2rem;
@@ -107,16 +72,6 @@ body {
 
     span.copyright {
       font-size: 0.8rem;
-    }
-
-    button.lights-button {
-      padding: 0.5rem;
-      background: inherit;
-      color: inherit;
-      border: 1px solid grey;
-      border-radius: 0.25rem;
-      outline: none;
-      cursor: pointer;
     }
   }
 }

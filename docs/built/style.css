@@ -18,25 +18,14 @@ a {
 }
 
 html {
-  background: #f0db4f;
-  height: 100%;
-}
-
-html.dark {
-  background: #36393f;
+  background: #1e2024;
   color: #f0f0f0;
-}
-html.dark body footer .icon {
-  fill: #f0f0f0;
 }
 
 body {
-  display: grid;
-  grid-template: "header" min-content "main" auto "footer" min-content/auto;
   min-height: 100%;
 }
 body header {
-  grid-area: header;
   height: 5rem;
 }
 body header a.brand {
@@ -44,7 +33,7 @@ body header a.brand {
   padding: 1rem;
 }
 body main {
-  grid-area: main;
+  height: 100%;
   margin: 1rem auto;
   max-width: 800px;
   padding: 1rem 2rem;
@@ -62,14 +51,7 @@ body main p.subheading {
   padding: 0.25rem 0;
 }
 body footer {
-  grid-area: footer;
-  height: 20rem;
   text-align: center;
-}
-body footer .icon {
-  fill: #171516;
-  height: 120px;
-  width: 120px;
 }
 body footer a {
   font-size: 1.2rem;
@@ -77,15 +59,6 @@ body footer a {
 }
 body footer span.copyright {
   font-size: 0.8rem;
-}
-body footer button.lights-button {
-  padding: 0.5rem;
-  background: inherit;
-  color: inherit;
-  border: 1px solid grey;
-  border-radius: 0.25rem;
-  outline: none;
-  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
